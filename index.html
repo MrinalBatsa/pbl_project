@@ -75,10 +75,11 @@
         Methodology
     </h2>
     <p class="text-slate-400 leading-relaxed text-justify mb-6">
-        Dataset: 30,000 credit card clients with 24 features including credit limit, age, gender, repayment history, bill amounts, and repayment amounts.
+        The project uses the UCI Default of Credit Card Clients dataset consisting of 30,000 samples and 23 financial and demographic features. The target variable is binary, indicating whether a client defaults in the next month. Data preprocessing involved removal of the ID column, correction of categorical encodings, and validation of feature consistency. The dataset was split using an 80/20 stratified train-test approach to preserve class imbalance. Since only about 22% of clients default, the dataset is imbalanced. To address this, class_weight='balanced' was applied to ensure the model gives higher importance to minority class samples.
     </p>
+
     <p class="text-slate-400 leading-relaxed text-justify mb-6">
-        80/20 train-test split. Random Forest classifier with class_weight='balanced'.
+        A Random Forest classifier with 300 trees and controlled depth was trained to capture non-linear relationships and reduce overfitting through ensemble learning. Performance evaluation included Accuracy, Precision, Recall, F1 Score, and ROC-AUC to assess both overall correctness and minority class detection. Finally, SHAP explainability techniques were applied to interpret how individual features influence predictions at both global and local levels.
     </p>
     <div class="text-center mt-8">
         <a href="https://github.com/MrinalBatsa/pbl_project" target="_blank"
