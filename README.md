@@ -1,4 +1,4 @@
-# Credit Card Default Prediction with Explainable AI
+# Credit Card Default Prediction with Explainability
 
 > A **portfolio-quality** machine learning project that predicts whether a credit card client will default next month, using a **Random Forest** classifier explained with **SHAP** (SHapley Additive exPlanations).
 
