@@ -6,3 +6,4 @@ seaborn>=0.12.0
 shap>=0.42.0
 joblib>=1.2.0
 jupyter>=1.0.0
+streamlit>=1.30.0
